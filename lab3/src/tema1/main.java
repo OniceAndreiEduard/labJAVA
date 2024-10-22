@@ -24,6 +24,7 @@ public class main {
         {
             double x=(double) (-b/(2*a));
             double y=(double) ((-(b*b)+4*a*c)/(4*a));
+
             return new double[]{x,y};
         }
         @Override
