@@ -12,7 +12,7 @@ public class ex5
         // Generăm șirul Fibonacci până la numărul 20
         int a = 0, b = 1, c;
         if (n == a || n == b) {
-            return true; // 0 și 1 fac parte din șir
+            return true; // 0ghjk și 1 fac parte din șir
         }
         // Generăm următoarele numere din șir până când depășim 20
         while (true) {
