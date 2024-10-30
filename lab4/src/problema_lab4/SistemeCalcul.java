@@ -6,10 +6,10 @@ public class SistemeCalcul extends Echipamente{
     private int c_hdd;
     private SistemeDEOperare sisteme;
 
-    public SistemeCalcul(String denumire, int nr_inv, float pret, String zona_mag, StareEchipamente stare, String tip_mon, float vit_proc, int c_hdd, SistemeDEOperare sisteme) {
-        super(denumire, nr_inv, pret, zona_mag, stare);
+    public SistemeCalcul(String denumire, int nr_inv, double pret, String zona_mag, StareEchipamente stare, String tip_mon, double vit_proc, int c_hdd, SistemeDEOperare sisteme) {
+        super(denumire, nr_inv, (float) pret, zona_mag, stare);
         this.tip_mon = tip_mon;
-        this.vit_proc = vit_proc;
+        this.vit_proc = (float) vit_proc;
         this.c_hdd = c_hdd;
         this.sisteme = sisteme;
     }

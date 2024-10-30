@@ -6,8 +6,8 @@ public class Imprimante extends Echipamente {
     private int p_car;
     private ModTiparire mod_tiparire;
 
-    public Imprimante(String denumire, int nr_inv, float pret, String zona_mag, StareEchipamente stare, float ppm, int dpi, int p_car, ModTiparire mod_tiparire) {
-        super(denumire, nr_inv, pret, zona_mag, stare);
+    public Imprimante(String denumire, int nr_inv, double pret, String zona_mag, StareEchipamente stare, float ppm, String dpi, int p_car, ModTiparire mod_tiparire) {
+        super(denumire, nr_inv, (float) pret, zona_mag, stare);
         this.ppm = ppm;
         this.dpi = String.valueOf(dpi);
         this.p_car = p_car;
