@@ -1,0 +1,32 @@
+[
+  {
+    "nume": "Matei",
+    "postul": "sef",
+    "data_angajarii": "2023-04-12",
+    "salariul": 4000.0
+  },
+  {
+    "nume": "Cosmin",
+    "postul": "director",
+    "data_angajarii": "2023-04-06",
+    "salariul": 8720.0
+  },
+  {
+    "nume": "Ianis",
+    "postul": "inginer",
+    "data_angajarii": "1980-10-08",
+    "salariul": 2567.0
+  },
+  {
+    "nume": "Stefan",
+    "postul": "portar",
+    "data_angajarii": "1988-11-23",
+    "salariul": 1207.0
+  },
+  {
+    "nume": "Nely",
+    "postul": "menajera",
+    "data_angajarii": "2003-02-15",
+    "salariul": 890.0
+  }
+]
