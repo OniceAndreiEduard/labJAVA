@@ -12,6 +12,7 @@ import java.time.LocalDateTime;
 import java.time.Month;
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.DoubleSummaryStatistics;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -74,6 +75,64 @@ public class main {
         System.out.println("\n");
 
         //subpunctul 5
+        System.out.println("\n Numele angajatilor cu majuscule: \n");
+        List<String> nume_majuscule = lista
+                .stream()
+                .map((s) -> s.getNume().toUpperCase())
+                .collect(Collectors.toList());
+        nume_majuscule.forEach(System.out::println);
+
+        //subpunctul 6
+        System.out.println("\nAfisarea salariilor mai mici de 3000 RON: \n");
+        lista
+                .stream()
+                .map((s) -> s.getSalariul())
+                .filter((s) -> s < 3000)
+                .forEach(System.out::println);
+
+        //subpunctul 7
+        System.out.println("\nAfișarea datelor primului angajat al firmei: \n");
+        lista
+                .stream()
+                .min(Comparator.comparing(Angajat::getData_angajarii))
+                .ifPresentOrElse(System.out::println,
+                        () -> System.out.println("Nu exista angajati in firma")
+                );
+
+        //subpunctul 8
+        System.out.println("\nAfișarea de statistici referitoare la salariul angajaților: \n");
+        DoubleSummaryStatistics statisticiSalarii = (DoubleSummaryStatistics) lista
+                .stream()
+                .collect(Collectors.summarizingDouble(Angajat::getSalariul));
+        System.out.println("Salariul minim: " + statisticiSalarii.getMin());
+        System.out.println("Salariul mediu: " + statisticiSalarii.getAverage());
+        System.out.println("Salariul maxim: " + statisticiSalarii.getMax());
+
+        //subpunctul 9
+        System.out.println("\nPrintre angajați există cel puțin un “Ion”: ");
+        lista
+                .stream()
+                .map(Angajat::getNume)
+                .filter((nume) -> nume.contains("Ion"))
+                .findAny()
+                .ifPresentOrElse((nume) -> System.out.println("In firma exista un Ion!"),
+                        () -> System.out.println(" Nu exista un Ion in firma!")
+                );
+
+        //subpunctul 10
+        System.out.println("\nAfișarea numărului de persoane care s-au angajat în vara anului precedent: \n");
+        int anulprecedent = LocalDate.now().getYear() - 1;
+        long nrAngajatiVara = lista
+                .stream()
+                .filter((s) -> s.getData_angajarii().getYear() == anulprecedent)
+                .filter((s) -> {
+                    Month luna = s.getData_angajarii().getMonth();
+                    return luna == Month.JUNE || luna == Month.AUGUST || luna == Month.JULY;
+                })
+                .count();
+
+        System.out.println("Numarul de persoana angajate in vara anului precedent sunt: " + nrAngajatiVara);
+
 
     }
 }
