@@ -39,8 +39,8 @@ public class main {
     }
 
     public static void main(String[] args) throws IOException {
-        List<Angajat> lista = citire();
         //subpunctul 1
+        List<Angajat> lista = citire();
         System.out.println("Afisarea angajatilor: ");
         lista.forEach(System.out::println);
         System.out.println("\n");
@@ -56,13 +56,13 @@ public class main {
         //subpunctul 3
         int anul_curent = LocalDate.now().getYear();
         int anul_trecut = anul_curent - 1;
+        System.out.println("Sefi si directori luna aprilie a anului trecut:\n ");
         List<Angajat> aprilie = lista
                 .stream()
                 .filter((s) -> s.getPostul().contains("sef") || s.getPostul().contains("director"))
                 .filter((s) -> s.getData_angajarii().getYear() == anul_trecut)
                 .filter((s) -> s.getData_angajarii().getMonth() == Month.APRIL)
                 .collect(Collectors.toList());
-        System.out.println("Sefi si directori luna aprilie a anului trecut:\n ");
         aprilie.forEach(System.out::println);
 
         //subpunctul 4
@@ -113,9 +113,9 @@ public class main {
         lista
                 .stream()
                 .map(Angajat::getNume)
-                .filter((nume) -> nume.contains("Ion"))
+                .filter((s) -> s.contains("Ion"))
                 .findAny()
-                .ifPresentOrElse((nume) -> System.out.println("In firma exista un Ion!"),
+                .ifPresentOrElse((s) -> System.out.println("In firma exista un Ion!"),
                         () -> System.out.println(" Nu exista un Ion in firma!")
                 );
 
