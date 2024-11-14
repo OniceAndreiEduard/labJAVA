@@ -112,7 +112,7 @@ public class main {
         System.out.println("\nPrintre angajați există cel puțin un “Ion”: ");
         lista
                 .stream()
-                .map(Angajat::getNume)
+                .map((s)->s.getNume())
                 .filter((s) -> s.contains("Ion"))
                 .findAny()
                 .ifPresentOrElse((s) -> System.out.println("In firma exista un Ion!"),
