@@ -1,32 +1,58 @@
 [
   {
-    "nume": "Matei",
-    "postul": "sef",
-    "data_angajarii": "2023-04-12",
-    "salariul": 4000.0
-  },
-  {
-    "nume": "Cosmin",
+    "nume": "Virgil",
     "postul": "director",
-    "data_angajarii": "2023-07-07",
-    "salariul": 8720.0
+    "data_angajarii": "2023-04-10",
+    "salariul": 8271.0
   },
   {
-    "nume": "Ion",
-    "postul": "inginer",
-    "data_angajarii": "1980-10-08",
-    "salariul": 2567.0
+    "nume": "Ion Popescu",
+    "postul": "Director General",
+    "data_angajarii": [
+      2023,
+      7,
+      12
+    ],
+    "salariul": 3500.5
   },
   {
-    "nume": "Stefan",
-    "postul": "portar",
-    "data_angajarii": "1988-11-23",
-    "salariul": 1207.0
+    "nume": "Maria Ionescu",
+    "postul": "Secretar",
+    "data_angajarii": [
+      2023,
+      3,
+      25
+    ],
+    "salariul": 2300.0
   },
   {
-    "nume": "Nely",
-    "postul": "menajera",
-    "data_angajarii": "2003-02-15",
-    "salariul": 890.0
+    "nume": "Alexandru Radu",
+    "postul": "Director Financiar",
+    "data_angajarii": [
+      2021,
+      4,
+      5
+    ],
+    "salariul": 2900.75
+  },
+  {
+    "nume": "Ionela Gheorghe",
+    "postul": "sef",
+    "data_angajarii": [
+      2023,
+      4,
+      10
+    ],
+    "salariul": 2700.0
+  },
+  {
+    "nume": "George Marinescu",
+    "postul": "Programator",
+    "data_angajarii": [
+      2022,
+      7,
+      15
+    ],
+    "salariul": 2200.0
   }
 ]

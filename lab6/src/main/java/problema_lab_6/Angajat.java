@@ -7,6 +7,7 @@ public class Angajat {
     private String postul;
     private LocalDate data_angajarii;
     private float salariul;
+
     public Angajat() {}
 
     public Angajat(String nume, String postul, LocalDate data_angajarii, float salariul) {
@@ -15,6 +16,11 @@ public class Angajat {
         this.data_angajarii = data_angajarii;
         this.salariul = salariul;
     }
+    public float salar_marit(float salariul)
+    {
+        return salariul*2;
+    }
+
 
     public String getNume() {
         return nume;

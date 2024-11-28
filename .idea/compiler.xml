@@ -6,8 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="lab7" />
+        <module name="sist_man" />
         <module name="lab5" />
         <module name="lab6" />
+        <module name="mobila" />
+        <module name="exercitiul-1-1-json" />
       </profile>
     </annotationProcessing>
   </component>

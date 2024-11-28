@@ -1,0 +1,18 @@
+[
+  {
+    "firma": "Audi",
+    "combustibilul": "motorina",
+    "pret": 1200.0,
+    "model": "A3"
+  },
+  {
+    "firma": "Kavasaki",
+    "combustibilul": "benzina",
+    "dataFabricatiei": "2010-10-03"
+  },
+  {
+    "firma": "Honda",
+    "combustibilul": "benzina",
+    "dataFabricatiei": "2012-01-13"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  [
+    "ex.Canapea",
+    {
+      "producator": "Dedeman",
+      "pret": 500.99,
+      "nrLocuri": 3,
+      "tipCanapea": "Extensibila"
+    }
+  ],
+  [
+    "ex.Dulap",
+    {
+      "producator": "Flavia",
+      "pret": 136.2,
+      "nrRafturi": 3,
+      "inaltime": 178.2
+    }
+  ]
+]

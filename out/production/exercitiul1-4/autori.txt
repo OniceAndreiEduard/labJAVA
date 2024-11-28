@@ -1,0 +1,5 @@
+Autor,Ion Creanga,BELETRISTICA,1837-03-01
+Carte,Amintiri din Copilarie,200,false
+Autor,Mihai Eminescu,BELETRISTICA,1850-01-15
+Carte,Luceafarul,150,true
+Carte,Scrisoarea III,100,false
